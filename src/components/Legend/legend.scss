@@ -1,0 +1,31 @@
+.o-legend {
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    font-size: 12px;
+  }
+
+  &__color {
+    width: 14px;
+    height: 24px;
+
+    &.-mediumBlue {
+      background-color: var(--medium-sky);
+    }
+    &.-blue {
+      background-color: var(--light-sky);
+    }
+
+    &.-pink {
+      background-color: var(--light-pink);
+    }
+
+    &.-purple {
+      background-color: var(--medium-pink);
+    }
+  }
+}

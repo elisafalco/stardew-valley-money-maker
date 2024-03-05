@@ -1,0 +1,582 @@
+[
+  {
+    "id": 0,
+    "name": "Ail",
+    "type": "vegetable",
+    "seasons": [
+      "spring"
+    ],
+    "growth_days": 4,
+    "regrowth_days": 0,
+    "seed_price": 40,
+    "price": 60,
+    "price_wine": 135,
+    "price_jelly": 170,
+    "image": "/crops/ail.png"
+  },
+  {
+    "id": 1,
+    "name": "Chou frisé",
+    "type": "vegetable",
+    "seasons": [
+      "spring"
+    ],
+    "growth_days": 6,
+    "regrowth_days": 0,
+    "seed_price": 70,
+    "price": 110,
+    "price_wine": 247,
+    "price_jelly": 270,
+    "image": "/crops/chou-frise.png"
+  },
+  {
+    "id": 2,
+    "name": "Chou-fleur",
+    "type": "vegetable",
+    "seasons": [
+      "spring"
+    ],
+    "growth_days": 12,
+    "regrowth_days": 0,
+    "seed_price": 80,
+    "price": 175,
+    "price_wine": 393,
+    "price_jelly": 400,
+    "image": "/crops/chou-fleur.png"
+  },
+  {
+    "id": 3,
+    "name": "Fraise",
+    "type": "fruit",
+    "seasons": [
+      "spring"
+    ],
+    "growth_days": 8,
+    "regrowth_days": 4,
+    "seed_price": 100,
+    "price": 120,
+    "price_wine": 360,
+    "price_jelly": 290,
+    "image": "/crops/fraise.png"
+  },
+  {
+    "id": 4,
+    "name": "Haricot",
+    "type": "vegetable",
+    "seasons": [
+      "spring"
+    ],
+    "growth_days": 10,
+    "regrowth_days": 3,
+    "seed_price": 60,
+    "price": 40,
+    "price_wine": 90,
+    "price_jelly": 130,
+    "image": "/crops/haricot.png"
+  },
+  {
+    "id": 5,
+    "name": "Panais",
+    "type": "vegetable",
+    "seasons": [
+      "spring"
+    ],
+    "growth_days": 4,
+    "regrowth_days": 0,
+    "seed_price": 20,
+    "price": 35,
+    "price_wine": 78,
+    "price_jelly": 120,
+    "image": "/crops/panais.png"
+  },
+  {
+    "id": 6,
+    "name": "Pomme de terre",
+    "type": "vegetable",
+    "seasons": [
+      "spring"
+    ],
+    "growth_days": 6,
+    "regrowth_days": 0,
+    "seed_price": 50,
+    "price": 80,
+    "price_wine": 180,
+    "price_jelly": 210,
+    "image": "/crops/pomme-de-terre.png"
+  },
+  {
+    "id": 7,
+    "name": "Rhubarbe",
+    "type": "fruit",
+    "seasons": [
+      "spring"
+    ],
+    "growth_days": 13,
+    "regrowth_days": 0,
+    "seed_price": 100,
+    "price": 220,
+    "price_wine": 660,
+    "price_jelly": 490,
+    "image": "/crops/rhubarbe.png"
+  },
+  {
+    "id": 8,
+    "name": "Riz",
+    "type": "vegetable",
+    "seasons": [
+      "spring"
+    ],
+    "growth_days": 8,
+    "regrowth_days": 0,
+    "seed_price": 40,
+    "price": 30,
+    "price_wine": 67,
+    "price_jelly": 110,
+    "image": "/crops/riz.png"
+  },
+  {
+    "id": 9,
+    "name": "Tulipe",
+    "type": "flower",
+    "seasons": [
+      "spring"
+    ],
+    "growth_days": 6,
+    "regrowth_days": 0,
+    "seed_price": 20,
+    "price": 30,
+    "price_wine": 0,
+    "price_jelly": 0,
+    "image": "/crops/tulipe.png"
+  },
+  {
+    "id": 10,
+    "name": "Zinnia bleue",
+    "type": "flower",
+    "seasons": [
+      "spring"
+    ],
+    "growth_days": 7,
+    "regrowth_days": 0,
+    "seed_price": 30,
+    "price": 50,
+    "price_wine": 0,
+    "price_jelly": 0,
+    "image": "/crops/zinnia-bleue.png"
+  },
+  {
+    "id": 11,
+    "name": "Blé",
+    "type": "vegetable",
+    "seasons": [
+      "summer",
+      "fall"
+    ],
+    "growth_days": 4,
+    "regrowth_days": 0,
+    "seed_price": 10,
+    "price": 25,
+    "price_wine": 200,
+    "price_jelly": 100,
+    "image": "/crops/ble.png"
+  },
+  {
+    "id": 12,
+    "name": "Carambole",
+    "type": "fruit",
+    "seasons": [
+      "summer"
+    ],
+    "growth_days": 13,
+    "regrowth_days": 0,
+    "seed_price": 400,
+    "price": 750,
+    "price_wine": 2250,
+    "price_jelly": 1550,
+    "image": "/crops/carambole.png"
+  },
+  {
+    "id": 13,
+    "name": "Chou rouge",
+    "type": "vegetable",
+    "seasons": [
+      "summer"
+    ],
+    "growth_days": 9,
+    "regrowth_days": 0,
+    "seed_price": 100,
+    "price": 260,
+    "price_wine": 585,
+    "price_jelly": 570,
+    "image": "/crops/chou-rouge.png"
+  },
+  {
+    "id": 14,
+    "name": "Fleur tropicale d'été",
+    "type": "flower",
+    "seasons": [
+      "summer"
+    ],
+    "growth_days": 8,
+    "regrowth_days": 0,
+    "seed_price": 50,
+    "price": 90,
+    "price_wine": 0,
+    "price_jelly": 0,
+    "image": "/crops/fleur-tropicale-d-ete.png"
+  },
+  {
+    "id": 15,
+    "name": "Houblon",
+    "type": "vegetable",
+    "seasons": [
+      "summer"
+    ],
+    "growth_days": 11,
+    "regrowth_days": 0,
+    "seed_price": 60,
+    "price": 25,
+    "price_wine": 300,
+    "price_jelly": 100,
+    "image": "/crops/houblon.png"
+  },
+  {
+    "id": 16,
+    "name": "Maïs",
+    "type": "vegetable",
+    "seasons": [
+      "summer",
+      "fall"
+    ],
+    "growth_days": 14,
+    "regrowth_days": 4,
+    "seed_price": 150,
+    "price": 50,
+    "price_wine": 112,
+    "price_jelly": 150,
+    "image": "/crops/mais.png"
+  },
+  {
+    "id": 17,
+    "name": "Melon",
+    "type": "fruit",
+    "seasons": [
+      "summer"
+    ],
+    "growth_days": 12,
+    "regrowth_days": 0,
+    "seed_price": 80,
+    "price": 250,
+    "price_wine": 750,
+    "price_jelly": 550,
+    "image": "/crops/melon.png"
+  },
+  {
+    "id": 18,
+    "name": "Myrtille",
+    "type": "fruit",
+    "seasons": [
+      "summer"
+    ],
+    "growth_days": 13,
+    "regrowth_days": 4,
+    "seed_price": 80,
+    "price": 50,
+    "price_wine": 150,
+    "price_jelly": 150,
+    "image": "/crops/myrtille.png"
+  },
+  {
+    "id": 19,
+    "name": "Pavot",
+    "type": "flower",
+    "seasons": [
+      "summer"
+    ],
+    "growth_days": 7,
+    "regrowth_days": 0,
+    "seed_price": 100,
+    "price": 140,
+    "price_wine": 0,
+    "price_jelly": 0,
+    "image": "/crops/pavot.png"
+  },
+  {
+    "id": 20,
+    "name": "Piment",
+    "type": "fruit",
+    "seasons": [
+      "summer"
+    ],
+    "growth_days": 5,
+    "regrowth_days": 3,
+    "seed_price": 40,
+    "price": 40,
+    "price_wine": 120,
+    "price_jelly": 130,
+    "image": "/crops/piment.png"
+  },
+  {
+    "id": 21,
+    "name": "Radis",
+    "type": "vegetable",
+    "seasons": [
+      "summer"
+    ],
+    "growth_days": 6,
+    "regrowth_days": 0,
+    "seed_price": 40,
+    "price": 90,
+    "price_wine": 202,
+    "price_jelly": 230,
+    "image": "/crops/radis.png"
+  },
+  {
+    "id": 22,
+    "name": "Tomate",
+    "type": "vegetable",
+    "seasons": [
+      "summer"
+    ],
+    "growth_days": 11,
+    "regrowth_days": 4,
+    "seed_price": 50,
+    "price": 60,
+    "price_wine": 135,
+    "price_jelly": 170,
+    "image": "/crops/tomate.png"
+  },
+  {
+    "id": 23,
+    "name": "Tournesol",
+    "type": "flower",
+    "seasons": [
+      "summer",
+      "fall"
+    ],
+    "growth_days": 8,
+    "regrowth_days": 0,
+    "seed_price": 100,
+    "price": 80,
+    "price_wine": 0,
+    "price_jelly": 0,
+    "image": "/crops/tournesol.png"
+  },
+  {
+    "id": 24,
+    "name": "Amarante",
+    "type": "vegetable",
+    "seasons": [
+      "fall"
+    ],
+    "growth_days": 7,
+    "regrowth_days": 0,
+    "seed_price": 70,
+    "price": 150,
+    "price_wine": 337,
+    "price_jelly": 350,
+    "image": "/crops/amarante.png"
+  },
+  {
+    "id": 25,
+    "name": "Artichaut",
+    "type": "vegetable",
+    "seasons": [
+      "fall"
+    ],
+    "growth_days": 8,
+    "regrowth_days": 0,
+    "seed_price": 30,
+    "price": 160,
+    "price_wine": 360,
+    "price_jelly": 370,
+    "image": "/crops/artichaut.png"
+  },
+  {
+    "id": 26,
+    "name": "Aubergine",
+    "type": "vegetable",
+    "seasons": [
+      "fall"
+    ],
+    "growth_days": 5,
+    "regrowth_days": 5,
+    "seed_price": 20,
+    "price": 60,
+    "price_wine": 135,
+    "price_jelly": 170,
+    "image": "/crops/aubergine.png"
+  },
+  {
+    "id": 27,
+    "name": "Betterave",
+    "type": "vegetable",
+    "seasons": [
+      "fall"
+    ],
+    "growth_days": 6,
+    "regrowth_days": 0,
+    "seed_price": 20,
+    "price": 100,
+    "price_wine": 225,
+    "price_jelly": 250,
+    "image": "/crops/betterave.png"
+  },
+  {
+    "id": 28,
+    "name": "Canneberges",
+    "type": "fruit",
+    "seasons": [
+      "fall"
+    ],
+    "growth_days": 7,
+    "regrowth_days": 5,
+    "seed_price": 240,
+    "price": 75,
+    "price_wine": 225,
+    "price_jelly": 200,
+    "image": "/crops/canneberges.png"
+  },
+  {
+    "id": 29,
+    "name": "Chou chinois",
+    "type": "vegetable",
+    "seasons": [
+      "fall"
+    ],
+    "growth_days": 4,
+    "regrowth_days": 0,
+    "seed_price": 50,
+    "price": 80,
+    "price_wine": 180,
+    "price_jelly": 210,
+    "image": "/crops/chou-chinois.png"
+  },
+  {
+    "id": 30,
+    "name": "Citrouille",
+    "type": "vegetable",
+    "seasons": [
+      "fall"
+    ],
+    "growth_days": 13,
+    "regrowth_days": 0,
+    "seed_price": 100,
+    "price": 320,
+    "price_wine": 720,
+    "price_jelly": 690,
+    "image": "/crops/citrouille.png"
+  },
+  {
+    "id": 31,
+    "name": "Igname",
+    "type": "vegetable",
+    "seasons": [
+      "fall"
+    ],
+    "growth_days": 10,
+    "regrowth_days": 0,
+    "seed_price": 60,
+    "price": 160,
+    "price_wine": 360,
+    "price_jelly": 370,
+    "image": "/crops/igname.png"
+  },
+  {
+    "id": 32,
+    "name": "Raisin",
+    "type": "fruit",
+    "seasons": [
+      "fall"
+    ],
+    "growth_days": 10,
+    "regrowth_days": 3,
+    "seed_price": 60,
+    "price": 80,
+    "price_wine": 240,
+    "price_jelly": 210,
+    "image": "/crops/raisin.png"
+  },
+  {
+    "id": 33,
+    "name": "Rose féerie",
+    "type": "flower",
+    "seasons": [
+      "fall"
+    ],
+    "growth_days": 12,
+    "regrowth_days": 0,
+    "seed_price": 200,
+    "price": 290,
+    "price_wine": 0,
+    "price_jelly": 0,
+    "image": "/crops/rose-feerie.png"
+  },
+  {
+    "id": 34,
+    "name": "Baie gemme sucrée",
+    "type": "special",
+    "seasons": [
+      "fall"
+    ],
+    "growth_days": 24,
+    "regrowth_days": 0,
+    "seed_price": 1000,
+    "price": 3000,
+    "price_wine": 0,
+    "price_jelly": 0,
+    "image": "/crops/baie-gemme-sucree.png"
+  },
+  {
+    "id": 35,
+    "name": "Feuilles de thé",
+    "type": "vegetable",
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "growth_days": 20,
+    "regrowth_days": 1,
+    "seed_price": 0,
+    "price": 50,
+    "price_wine": 100,
+    "price_jelly": 150,
+    "image": "/crops/feuilles-de-the.png"
+  },
+  {
+    "id": 36,
+    "name": "Fruit ancien",
+    "type": "vegetable",
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "growth_days": 28,
+    "regrowth_days": 7,
+    "seed_price": 0,
+    "price": 550,
+    "price_wine": 1650,
+    "price_jelly": 1150,
+    "image": "/crops/fruit-ancien.png"
+  },
+  {
+    "id": 37,
+    "name": "Fruit de cactus",
+    "type": "fruit",
+    "seasons": [
+      "spring",
+      "summer",
+      "fall",
+      "winter"
+    ],
+    "growth_days": 12,
+    "regrowth_days": 3,
+    "seed_price": 150,
+    "price": 75,
+    "price_wine": 225,
+    "price_jelly": 200,
+    "image": "/crops/fruit-de-cactus.png"
+  }
+]

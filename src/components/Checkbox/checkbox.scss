@@ -1,0 +1,39 @@
+.a-checkbox {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+
+  &__box {
+    position: relative;
+    width: 14px;
+    height: 14px;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &.-checked {
+      &::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 8px;
+        height: 8px;
+        background-color: var(--light-sky);
+        border-radius: 2px;
+        transform: translate(-50%, -50%);
+        content: "";
+      }
+    }
+  }
+
+  &__input {
+    appearance: none;
+    display: none;
+  }
+
+  &__label {
+    font-weight: 500;
+    line-height: 1;
+    cursor: pointer;
+  }
+}

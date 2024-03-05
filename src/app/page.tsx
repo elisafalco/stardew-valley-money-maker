@@ -1,94 +1,155 @@
+"use client";
+
+import { useState } from "react";
+
+// Style
+import "./homepage.scss";
+
+// Types
+import { CropsType } from "@/types/types.d";
+
+// Components
 import Image from "next/image";
-import styles from "./page.module.css";
+import Checkbox from "@/components/Checkbox/Checkbox";
+import Legend from "@/components/Legend/Legend";
+
+import Graph from "@/components/Graph/Graph";
+
+// Data
+import cropsData from "../data/crops.json";
 
 export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+  // Variables
+  const defaultFilters = [
+    { name: "spring", label: "Printemps", value: true },
+    { name: "summer", label: "Été", value: true },
+    { name: "fall", label: "Automne", value: true },
+    { name: "winter", label: "Hiver", value: true },
+  ];
+  const defaultPriceSettings = [
+    { name: "tiller", label: "Cultivateur", value: true },
+    { name: "artisan", label: "Artisan", value: false },
+    { name: "compareSeedPrice", label: "Comp. prix graine", value: false },
+  ];
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+  // Hooks
+  const [filters, setFilters] = useState(defaultFilters);
+  const [priceSettings, setPriceSettings] = useState(defaultPriceSettings);
+
+  /**
+   * handleFilterChange
+   *
+   * @param filterName
+   */
+  const handleFilterChange = (filterName: string) => {
+    // Map on filter to change only one
+    setFilters(
+      filters.map((filter) => {
+        if (filter.name === filterName) {
+          return {
+            ...filter,
+            value: !filter.value,
+          };
+        }
+        return filter;
+      })
+    );
+  };
+
+  /**
+   * handleSettingChange
+   *
+   * @param settingName
+   */
+  const handleSettingChange = (settingName: string) => {
+    // Map on filter to change only one
+    setPriceSettings(
+      priceSettings.map((setting) => {
+        if (setting.name === settingName) {
+          return {
+            ...setting,
+            value: !setting.value,
+          };
+        }
+        return setting;
+      })
+    );
+  };
+
+  /**
+   * getFilteredCrops
+   */
+  const getFilteredCrops = () => {
+    const activeFilters = filters.map((filter) => {
+      if (filter.value) {
+        return filter.name;
+      }
+
+      return null;
+    });
+
+    return cropsData.filter((cropData) =>
+      cropData.seasons.some((cropSeason) => activeFilters.includes(cropSeason))
+    );
+  };
+
+  const filteredCrops: CropsType[] = getFilteredCrops();
+
+  return (
+    <main className="l-main">
+      {/* <Image
+        src="/logo.png"
+        alt="Stardew Valley Logo"
+        width={200}
+        height={100}
+        priority
+      /> */}
+
+      <div className="o-content">
+        <div className="o-filters">
+          {filters.map((filter, index) => (
+            <div key={index}>
+              <Checkbox
+                id={filter.name}
+                name={filter.name}
+                label={filter.label}
+                checked={filter.value}
+                onChange={() => handleFilterChange(filter.name)}
+              />
+            </div>
+          ))}
+          <span className="o-filters__separator" />
+          {priceSettings.map((setting, index) => (
+            <div key={index}>
+              <Checkbox
+                id={setting.name}
+                name={setting.name}
+                label={setting.label}
+                checked={setting.value}
+                onChange={() => handleSettingChange(setting.name)}
+              />
+            </div>
+          ))}
+
+          <Legend />
+        </div>
+
+        <Graph
+          crops={filteredCrops}
+          isTiller={priceSettings[0].value}
+          isArtisan={priceSettings[1].value}
+          compareSeedPrice={priceSettings[2].value}
         />
       </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="a-chicken">
+        <Image
+          src="/chicken.png"
+          alt="Just a chicken"
+          title="Côt côt"
+          width={50}
+          height={50}
+        />
       </div>
     </main>
   );
